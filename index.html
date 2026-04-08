@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="sources/globalstyles.css">
+      <link rel="shortcut icon" href="media/icon.jpeg" type="image/x-icon">
+      <title>ON GOD NEWS</title>
+</head>
+<body onload="showCookiesLol()">
+      <section id="cookiesmain">
+            <section id="cookiespls" style="overflow: auto;">
+                  <h2 style="margin: 0; font-family: Arial, monospace; margin-bottom: 30px;">SIEMA GRUBASIE, CHCESZ CIASTECZKA?</h2>
+                  <span style="line-height: 20px; font-size: 15px;">
+                  <p>** Twoje dane będą przetwarzane przez naszych partnerów (42067 firm) do celów jakichkolwiek.</p>
+                  <p>** Twoje dane będą używane do zapisywania twoich preferencji na tej stronie. [nie]</p>
+                  <p>** Twoje dane zostaną usunięte, gdy nie będą już nam potrzebne. Czyli zaraz po tym jak wyślemy je do rządu Izraela oraz biur filtrowania migrantów amerykańskiej służby celno-skarbowej.</p>
+                  <p>Filler tekst, bo tu zawsze dużo się pisze, aby wam się nie chciało czytać regulaminu ciasteczek: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos voluptatum iure est amet quasi quaerat soluta placeat illum facere officiis fugiat porro,<br>
+                        nesciunt quo fugit nostrum excepturi? Culpa, accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto nulla odio nemo enim obcaecati in voluptate nostrum earum eius ad facilis, hic officiis, necessitatibus nisi ducimus dolorem aspernatur fuga.<br>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eligendi quos quam illo, ratione illum provident deleniti animi earum odio eos alias dolor necessitatibus qui impedit aspernatur quo hic veritatis.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non, tempora ab vel quam incidunt suscipit maiores fuga labore, quidem deleniti doloremque a illo culpa quae earum inventore atque? Eligendi!</p></span>
+            <button onclick="hideCookies()" class="cookbut" style="background-color: rgb(50, 171, 59); margin-right: 50px; margin-left: 15px;">AKCEPTUJ WSZYSTKIE</button>
+            <button onclick="hideCookies()" class="cookbut" style="background-color: rgb(75, 75, 75);">AKCEPTUJ TYLKO WYMAGANE (WSZYSTKIE)</button>
+            
+      </section>
+      </section>
+      <section class="header">
+            <img src="media/logo.png" id="logo-h" onclick="tapforlogin()">
+            <button class="h-but">O nas</button>
+            <button class="h-but">Polityka USA</button>
+            <button class="h-but">PILNE</button>
+      </section>
+      <section class="main">
+            <section id="latestnews">
+                  <h1 style="margin: 0; color: whitesmoke; text-align: center; font-family: 'Times New Roman';">NAJNOWSZE WIADOMOŚCI</h1>
+                  <section></section> <!-- latest news here -->
+            </section>
+      </section>
+</body>
+<script>
+      let taps = 0;
+      const d = new Date();
+      function tapforlogin(){
+            if (taps == 5) {
+                  let password = prompt("Logowanie redaktora:");
+                  if (password == '5731' + d.getDay() + d.getFullYear() + 'hi') {
+                        alert('logged in successfully!') //--------------------------------- TEMPORARY
+                  } else {
+                        alert("Nieprawidłowe hasło!");
+                        console.info("Reminder to staff: Indexed days start at Sunday.");
+                  }
+            } else {taps++;}
+      }
+
+      let cc = document.getElementById('cookiesmain');
+      function showCookiesLol() {
+            setTimeout(()=>{
+                  cc.style.visibility = 'visible';
+                  setTimeout(()=>{document.getElementById('cookiespls').style.bottom = 0;},400);
+            },1200);}
+      function hideCookies() {cc.style.visibility = 'hidden';}
+</script>
+</html>

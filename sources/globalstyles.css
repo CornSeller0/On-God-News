@@ -16,8 +16,9 @@ body {
       color: whitesmoke;
       font-size: 30px;
       padding: 20px 25px;
-      background: black;
+      background: rgb(50, 171, 59);
       background: linear-gradient(270deg,rgba(50, 171, 59, 1) 30%, rgba(50, 171, 59, 1) 71%, rgba(0, 0, 0, 1) 100%);
+      background-position-x: -0.5px;
       border: 2px solid black;
       border-radius: 20px;
       float: right;
@@ -30,6 +31,7 @@ body {
       background: linear-gradient(270deg,rgb(36, 121, 42) 30%, rgba(36, 121, 42) 71%, rgba(0, 0, 0, 1) 100%);
       text-shadow: 0px 0px 7px #FFFFFF;
       box-shadow: 0px 0px 7px #000;
+      background-position-x: -0.5px;
 }
 
 .main {

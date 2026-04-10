@@ -4,10 +4,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="sources/globalstyles.css">
+      <link rel="stylesheet" href="sources/main.css">
       <link rel="shortcut icon" href="media/icon.jpeg" type="image/x-icon">
       <title>ON GOD NEWS</title>
 </head>
-<body onload="showCookiesLol()">
+<body onload="showCookiesLol(); updateLatest();">
       <section id="cookiesmain">
             <section id="cookiespls" style="overflow: auto;">
                   <h2 style="margin: 0; font-family: Arial, monospace; margin-bottom: 30px;">SIEMA GRUBASIE, CHCESZ CIASTECZKA?</h2>
@@ -33,8 +34,15 @@
       <section class="main">
             <section id="latestnews">
                   <h1 style="margin: 0; color: whitesmoke; text-align: center; font-family: 'Times New Roman';">NAJNOWSZE WIADOMOŚCI</h1>
-                  <section></section> <!-- latest news here -->
+                  <section id="zdjc">
+                        <section id="latimg1" style="margin-left: 5%;"></section>
+                        <section id="latimg2" style="margin-right: 5%;"></section> 
+                  </section>
+                  <h2 id="latest-op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat, perferendis eius facere error rerum aspernatur, ex nesciunt sunt saepe deleniti nemo quod laborum quaerat eveniet in voluptates harum dolor.</h2>
+                  <h5 id="latest-date">67.67.2067</h5>
             </section>
+            <section class="bannerad" style="background-image: url('media/ad1.jpg');">ccc</section>
+            <section class="bannerad" style="background-image: url('media/ad1.jpg');">ccc</section>
       </section>
 </body>
 <script>
@@ -60,4 +68,5 @@
             },1200);}
       function hideCookies() {cc.style.visibility = 'hidden';}
 </script>
+<script src="sources/main.js"></script>
 </html>

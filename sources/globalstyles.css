@@ -44,10 +44,21 @@ body {
 
 .bannerad {
       border: 2px double gray;
-      height: 10vh;
+      height: 55vh;
       width: 10vw;
       position: absolute;
       top: 30vh;
-      left: 2.5vw;
-      background-size: cover;
+      background-size: contain;
+      z-index: 2;
+}
+#bannerad1 {left: 2.5vw;}
+#bannerad2 {right: 2.5vw;}
+#bottomad {
+      margin-top: 100px;
+      border: 2px double gray;
+      height: 25vh;
+      width: 50vw;
+      /*position: absolute;*/
+      background-size: contain;
+      z-index: 2;
 }
